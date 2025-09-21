@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "UX Design Guide",
     images: [
       {
-        url: "/image.png",
+        url: "https://tiennhm.github.io/ux-design-principles/image.png",
         width: 1200,
         height: 630,
         alt: "UX Design Guide - Hướng dẫn thiết kế trải nghiệm người dùng",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "UX Design Guide - Hướng dẫn thiết kế trải nghiệm người dùng",
     description: "Tài liệu học tập UX Design cơ bản bằng tiếng Việt",
-    images: ["/image.png"],
+    images: ["https://tiennhm.github.io/ux-design-principles/image.png"],
   },
 }
 

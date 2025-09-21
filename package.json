@@ -1,7 +1,11 @@
 {
-  "name": "my-v0-project",
+  "name": "ux-design-principles",
+  "description": "A project to explore and implement UX design principles.",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://tiennhm.github.io/ux-design-principles/",
+  "author": "Tien Nguyen Huynh Minh",
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "build": "next build",
     "dev": "next dev",

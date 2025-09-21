@@ -10,25 +10,27 @@ export function Resources() {
       author: "Don Norman",
       description: "UX mindset kinh điển - Cuốn sách nền tảng về tâm lý học trong thiết kế",
       type: "Sách nền tảng",
+      url: "https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things",
     },
     {
       title: "Don't Make Me Think",
       author: "Steve Krug",
       description: "UI/UX thực tế, dễ áp dụng - Hướng dẫn thiết kế web usability",
       type: "Sách thực hành",
+      url: "https://www.goodreads.com/book/show/18197267-don-t-make-me-think-revisited",
     },
   ]
 
   const websites = [
     {
       title: "Nielsen Norman Group",
-      url: "nngroup.com",
+      url: "https://www.nngroup.com",
       description: "Kho kiến thức UX chuẩn mực từ các chuyên gia hàng đầu thế giới",
       type: "Research & Articles",
     },
     {
       title: "Interaction Design Foundation",
-      url: "interaction-design.org",
+      url: "https://www.interaction-design.org",
       description: "Khóa học và tài liệu về thiết kế tương tác và UX design",
       type: "Courses & Learning",
     },
@@ -41,7 +43,9 @@ export function Resources() {
           <Badge variant="secondary" className="mb-4">
             Chương 4
           </Badge>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">Tài nguyên khuyến nghị</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
+            Tài nguyên khuyến nghị
+          </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
             Những cuốn sách và trang web chất lượng cao để bạn tiếp tục hành trình học UX design.
           </p>
@@ -71,8 +75,14 @@ export function Resources() {
                       </Badge>
                     </div>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="space-y-4">
                     <p className="text-sm text-muted-foreground leading-relaxed">{book.description}</p>
+                    <Button asChild variant="outline" size="sm" className="w-full bg-transparent">
+                      <a href={book.url} target="_blank" rel="noopener noreferrer">
+                        Xem chi tiết
+                        <ExternalLink className="ml-2 h-3 w-3" />
+                      </a>
+                    </Button>
                   </CardContent>
                 </Card>
               ))}
@@ -104,9 +114,11 @@ export function Resources() {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <p className="text-sm text-muted-foreground leading-relaxed">{site.description}</p>
-                    <Button variant="outline" size="sm" className="w-full bg-transparent">
-                      Truy cập website
-                      <ExternalLink className="ml-2 h-3 w-3" />
+                    <Button asChild variant="outline" size="sm" className="w-full bg-transparent">
+                      <a href={site.url} target="_blank" rel="noopener noreferrer">
+                        Truy cập website
+                        <ExternalLink className="ml-2 h-3 w-3" />
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>

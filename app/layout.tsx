@@ -13,8 +13,32 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "UX Design Guide - Hướng dẫn thiết kế trải nghiệm người dùng",
-  description: "Tài liệu học tập UX Design cơ bản bằng tiếng Việt",
+  description: "Tài liệu học tập UX Design cơ bản bằng tiếng Việt. Tìm hiểu về nguyên tắc thiết kế, quy trình UX, nghiên cứu người dùng và thực hành thiết kế.",
   generator: "v0.app",
+  keywords: ["UX Design", "UI Design", "thiết kế trải nghiệm", "người dùng", "design thinking", "prototyping"],
+  authors: [{ name: "UX Design Guide" }],
+  openGraph: {
+    title: "UX Design Guide - Hướng dẫn thiết kế trải nghiệm người dùng",
+    description: "Tài liệu học tập UX Design cơ bản bằng tiếng Việt. Tìm hiểu về nguyên tắc thiết kế, quy trình UX, nghiên cứu người dùng và thực hành thiết kế.",
+    type: "website",
+    locale: "vi_VN",
+    url: "https://tiennhm.github.io/ux-design-principles/",
+    siteName: "UX Design Guide",
+    images: [
+      {
+        url: "/image.png",
+        width: 1200,
+        height: 630,
+        alt: "UX Design Guide - Hướng dẫn thiết kế trải nghiệm người dùng",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UX Design Guide - Hướng dẫn thiết kế trải nghiệm người dùng",
+    description: "Tài liệu học tập UX Design cơ bản bằng tiếng Việt",
+    images: ["/image.png"],
+  },
 }
 
 export default function RootLayout({
